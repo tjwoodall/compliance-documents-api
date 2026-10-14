@@ -43,8 +43,11 @@ info:
   contact: {}
   version: '1.0'
 servers:
-  - url: https://api.service.hmrc.gov.uk/
+  - url: https://test-api.service.hmrc.gov.uk
+    description: Sandbox
+  - url: https://api.service.hmrc.gov.uk
     variables: {}
+    description: Production
 paths:
   /misc/compliance-documents/vat-repayment-info/{document-id}:
     post:

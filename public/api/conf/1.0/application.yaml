@@ -241,12 +241,12 @@ paths:
                 code: INTERNAL_SERVER_ERROR
       deprecated: false
       security:
-        - applicationRestricted:
+        - Application-Restricted:
             - write:protect-connect
 
 components:
   securitySchemes:
-    applicationRestricted:
+    Application-Restricted:
       type: oauth2
       description: |
         HMRC supports OAuth 2.0 for authenticating application restricted API requests using an OAuth 2.0 Bearer Token in the AUTHORIZATION header.
